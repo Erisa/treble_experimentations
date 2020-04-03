@@ -48,6 +48,8 @@ ROM types:
   aquarios
   carbon-oreo
   crdroid-oreo
+  du-pie
+  du-ten
   e-pie
   e-oreo
   havoc-pie
@@ -131,6 +133,22 @@ function get_rom_type() {
                 treble_generate="carbon"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 jack_enabled="true"
+                ;;
+            du-pie)
+                mainrepo="https://github.com/DirtyUnicorns/android_manifest.git"
+                mainbranch="p9x"
+                localManifestBranch="android-9.0"
+                treble_generate="du"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                jack_enabled="false"
+                ;;
+            du-ten)
+                mainrepo="https://github.com/DirtyUnicorns/android_manifest.git"
+                mainbranch="q9x"
+                localManifestBranch="android-10.0"
+                treble_generate="du"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                jack_enabled="false"
                 ;;
             e-pie)
                 mainrepo="https://gitlab.e.foundation/e/os/android/"
