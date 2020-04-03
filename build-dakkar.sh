@@ -144,7 +144,7 @@ function get_rom_type() {
                 ;;
             du-ten)
                 mainrepo="https://github.com/DirtyUnicorns/android_manifest.git"
-                mainbranch="q9x"
+                mainbranch="q10x"
                 localManifestBranch="android-10.0"
                 treble_generate="du"
                 extra_make_options="WITHOUT_CHECK_API=true"
