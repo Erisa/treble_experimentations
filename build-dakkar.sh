@@ -422,7 +422,7 @@ function clone_or_checkout() {
 }
 
 function init_local_manifest() {
-    clone_or_checkout .repo/local_manifests phhusson/treble_manifest
+    clone_or_checkout .repo/local_manifests Erisa/treble_manifest
 }
 
 function init_patches() {
