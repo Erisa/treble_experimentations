@@ -33,5 +33,5 @@ else
     echo "!!! For subsequent builds, DO NOT RUN THIS SCRIPT !!!"
     echo "!!! Instead enter ~/build and use ../treble_experimentations/build-dakkar.sh !!!"
     touch "$HOME/.erisa-android-setup-done"
-    bash -x ../treble_experimentations/build-dakkar.sh $1 $2
+    bash ../treble_experimentations/build-dakkar.sh $1 $2
 fi
