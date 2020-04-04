@@ -417,17 +417,17 @@ function clone_or_checkout() {
             git checkout origin/"$localManifestBranch"
         )
     else
-        git clone https://github.com/phhusson/"$repo" "$dir" -b "$localManifestBranch"
+        git clone https://github.com/"$repo" "$dir" -b "$localManifestBranch"
     fi
 }
 
 function init_local_manifest() {
-    clone_or_checkout .repo/local_manifests treble_manifest
+    clone_or_checkout .repo/local_manifests phhusson/treble_manifest
 }
 
 function init_patches() {
     if [[ -n "$treble_generate" ]]; then
-        clone_or_checkout patches treble_patches
+        clone_or_checkout patches Erisa/treble_patches
 
         # We don't want to replace from AOSP since we'll be applying
         # patches by hand
