@@ -53,6 +53,7 @@ ROM types:
   e-pie
   e-oreo
   havoc-pie
+  havoc-ten
   komodo-pie
   lineage151
   lineage160
@@ -263,6 +264,14 @@ function get_rom_type() {
                 jack_enabled="true"
                 ;;
             havoc-pie)
+                mainrepo="https://github.com/Havoc-OS/android_manifest.git"
+                mainbranch="ten"
+                localManifestBranch="android-10.0"
+                treble_generate="havoc"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                jack_enabled="false"
+                ;;
+            havoc-ten)
                 mainrepo="https://github.com/Havoc-OS/android_manifest.git"
                 mainbranch="pie"
                 localManifestBranch="android-9.0"
