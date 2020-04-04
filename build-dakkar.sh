@@ -274,7 +274,7 @@ function get_rom_type() {
             havoc-ten)
                 mainrepo="https://github.com/Havoc-OS/android_manifest.git"
                 mainbranch="ten"
-                localManifestBranch="android-10.0"
+                localManifestBranch="havoc-ten"
                 treble_generate="havoc"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 jack_enabled="false"
